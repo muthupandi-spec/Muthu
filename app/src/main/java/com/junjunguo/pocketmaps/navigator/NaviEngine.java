@@ -227,6 +227,7 @@ public class NaviEngine
         }
       }
   }
+
   
   @UiThread
   public void updatePosition(Activity activity, Location pos)

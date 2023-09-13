@@ -84,6 +84,7 @@ public class MapHandler
   FloatingActionButton naviCenterBtn;
   PointList trackingPointList = new PointList();
   private int customIcon = R.drawable.ic_my_location_dark_24dp;
+  private int customIcon1 = R.drawable.ic_location_end_24dp;
   private MapFileTileSource tileSource;
   /**
    * need to know if path calculating status change; this will trigger MapActions function
@@ -136,7 +137,6 @@ public class MapHandler
 
     // Map events receiver
     mapView.map().layers().add(new MapEventsReceiver(mapView.map()));
-
     // Map file source
     tileSource = new MapFileTileSource();
     tileSource.setMapFile(new File(areaFolder, currentArea + ".map").getAbsolutePath());
@@ -307,6 +307,15 @@ public class MapHandler
       mapView.map().updateMap(true);
     }
   }
+    public void setCustomPoint1(Activity activity, GeoPoint p)
+    {
+        if (customLayer==null) { return; } // Not loaded yet.
+        if (p!=null)
+        {
+            customLayer.addItem(createMarkerItem(activity, p,customIcon1, 0.5f, 0.5f));
+            mapView.map().updateMap(true);
+        }
+    }
   
   public void setCustomPointIcon(Context appContext, int customIcon)
   {
@@ -574,7 +583,9 @@ public class MapHandler
   {
 
       MapEventsReceiver(org.oscim.map.Map map) {
+
           super(map);
+
       }
 
       @Override
@@ -588,6 +599,8 @@ public class MapHandler
           }
           return false;
       }
+
+
   }
   
   private void logUser(Activity activity, String str)

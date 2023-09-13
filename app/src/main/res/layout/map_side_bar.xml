@@ -59,7 +59,7 @@
             android:layout_marginRight="@dimen/fab_margin_default"
             android:layout_marginTop="@dimen/fab_margin_default"
             android:src="@drawable/ic_settings_white_24dp"
-            android:visibility="invisible"
+            android:visibility="gone"
             />
     </LinearLayout>
 
@@ -113,7 +113,7 @@
             android:layout_marginRight="@dimen/fab_margin_default"
             android:layout_marginTop="@dimen/fab_margin_default"
             android:src="@drawable/ic_star_outline_white_24dp"
-            android:visibility="invisible"
+            android:visibility="gone"
             />
     </LinearLayout>
     
@@ -163,6 +163,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/fab_margin_default"
                 android:layout_marginLeft="@dimen/fab_margin_default"
+                android:visibility="visible"
                 android:layout_marginRight="@dimen/fab_margin_default"
                 android:layout_marginTop="@dimen/fab_margin_default"
                 android:src="@drawable/ic_location_searching_white_24dp"
@@ -175,6 +176,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/fab_margin_default"
                 android:layout_marginLeft="@dimen/fab_margin_default"
+                android:visibility="visible"
                 android:layout_marginRight="@dimen/fab_margin_default"
                 android:layout_marginTop="@dimen/fab_margin_default"
                 android:src="@drawable/ic_navigation_white_24dp"
@@ -189,6 +191,7 @@
             android:layout_marginBottom="@dimen/fab_margin_default"
             android:layout_marginLeft="@dimen/fab_margin_default"
             android:layout_marginRight="@dimen/fab_margin_default"
+            android:visibility="gone"
             android:layout_marginTop="@dimen/fab_margin_default"
             android:src="@drawable/ic_keyboard_arrow_up_white_24dp"
             />

@@ -100,10 +100,13 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
         this.toLocalET = (TextView) activity.findViewById(R.id.nav_settings_to_local_et);
         this.menuVisible = false;
         MapHandler.getMapHandler().setMapHandlerListener(this);
-        MapHandler.getMapHandler().setNaviCenterBtn(naviCenterBtn);
+        MapHandler.getMapHandler().setNaviCenterBtn(
+                naviCenterBtn
+        );
         Navigator.getNavigator().addListener(this);
         appSettings = new AppSettings(activity);
         naviCenterBtn.setOnClickListener(createNaviCenterListener());
+        sideBarMenuVP.setVisibility(View.VISIBLE);
         initControlBtnHandler();
         initZoomControlHandler(mapView);
         initShowMyLocation(mapView);
@@ -133,8 +136,8 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
       }
       else if (type == HintType.Main)
       {
-        addHint(rl, this.showPositionBtn, R.string.hint_center, true);
-        addHint(rl, this.navigationBtn, R.string.hint_nav, true);
+//        addHint(rl, this.showPositionBtn, R.string.hint_center, true);
+//        addHint(rl, this.navigationBtn, R.string.hint_nav, true);
       }
     }
     
@@ -208,7 +211,7 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
         settingsBtn.setOnClickListener(new View.OnClickListener() {
             ColorStateList oriColor;
             @Override public void onClick(View v) {
-              if (southBarSettVP.getVisibility() == View.VISIBLE)
+             /* if (southBarSettVP.getVisibility() == View.VISIBLE)
               {
                 settingsBtn.setBackgroundTintList(oriColor);
                 southBarSettVP.setVisibility(View.INVISIBLE);
@@ -227,7 +230,7 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
                 controlBtn.clearAnimation();
                 controlBtn.setVisibility(View.INVISIBLE);
                 setHint(HintType.Settings);
-              }
+              }*/
             }
         });
     }
@@ -258,7 +261,7 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
                 favourBtn.setBackgroundTintList(ColorStateList.valueOf(R.color.abc_color_highlight_material));
                 southBarFavourVP.setVisibility(View.VISIBLE);
                 settingsBtn.setVisibility(View.INVISIBLE);
-                sideBarMenuVP.setVisibility(View.INVISIBLE);
+                sideBarMenuVP.setVisibility(View.VISIBLE);
                 controlBtn.clearAnimation();
                 controlBtn.setVisibility(View.INVISIBLE);
                 setHint(HintType.Favourites);
@@ -947,7 +950,6 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
             @Override public void onClick(View v) {
                 if (isMenuVisible()) {
                     setMenuVisible(false);
-                    sideBarMenuVP.setVisibility(View.INVISIBLE);
                     favourBtn.setVisibility(View.INVISIBLE);
                     settingsBtn.setVisibility(View.INVISIBLE);
                     controlBtn.setImageResource(R.drawable.ic_keyboard_arrow_up_white_24dp);
@@ -1116,3 +1118,100 @@ public class MapActions implements NavigatorListener, MapHandlerListener {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

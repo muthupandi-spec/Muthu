@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PocketMaps</string>
+    <string name="app_name">Offline map</string>
     <string name="on_google_map">Su Google Maps</string>
     <string name="title_activity_main">Impostazioni mappa</string>
     <string name="title_activity_map">Mappa</string>
@@ -57,7 +57,7 @@
     <string name="add_address">Aggiungi indirizzo</string>
     <string name="title">Titolo</string>
     <string name="add_text">Aggiungi testo</string>
-    <string name="rate_pocket_maps">Valuta PocketMaps</string>
+    <string name="rate_pocket_maps">Valuta Offline map</string>
     <string name="swipe_out">Scorri lateralmente per eliminare</string>
     <string name="dont_show_again">Non mostrare di nuovo</string>
     <string name="wrong_direction">Direzione sbagliata</string>

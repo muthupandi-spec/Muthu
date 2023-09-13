@@ -32,7 +32,7 @@ import java.util.Locale;
  * Created by GuoJunjun <junjunguo.com> on July 04, 2015.
  */
 public class Analytics extends AppCompatActivity implements TrackingListener {
-    // status   ---------
+    // status   -----------------
     public static boolean startTimer = true;
     /**
      * a sport category spinner: to choose with type of sport which also has MET value in its adapter

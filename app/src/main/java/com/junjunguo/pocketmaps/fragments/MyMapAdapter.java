@@ -88,7 +88,7 @@ public class MyMapAdapter extends RecyclerView.Adapter<MyMapAdapter.ViewHolder> 
                 downloadStatus.setText("");
             }
 
-            System.out.println("download....."+Constants.Page);
+           /* System.out.println("download....."+Constants.Page);
             if(Constants.Page.equals("download")){
                 View.OnClickListener l = new View.OnClickListener()
                 {
@@ -103,16 +103,24 @@ public class MyMapAdapter extends RecyclerView.Adapter<MyMapAdapter.ViewHolder> 
 
             }else  if(Constants.Page.equals("homepage")){
                 onClickMapListener.onClickMap(ViewHolder.this.getAdapterPosition());
-            }
+            }*/
+            View.OnClickListener l = new View.OnClickListener()
+            {
+                public void onClick(View v)
+                {
+                    log("onclick" + itemView.toString());
+                    onClickMapListener.onClickMap(ViewHolder.this.getAdapterPosition());
+                }
+            };
             name.setText(myMap.getCountry());
             continent.setText(myMap.getContinent());
             size.setText(myMap.getSize());
+            itemView.setOnClickListener(l);
             System.out.println("country"+myMap.getCountry());
-         /*   if(myMap.getCountry().equals("India")){
+          /*  if(myMap.getCountry().equals("India")){
                 name.setText(myMap.getCountry());
                 continent.setText(myMap.getContinent());
                 size.setText(myMap.getSize());
-                itemView.setOnClickListener(l);
             }
             else{
                 relate.setVisibility(View.GONE);

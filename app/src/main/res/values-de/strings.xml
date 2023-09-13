@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PocketMaps</string>
+    <string name="app_name">Offline map</string>
     <string name="on_google_map">Auf Google Maps</string>
     <string name="title_activity_main">Karteneinstellungen</string>
     <string name="title_activity_map">Karte</string>

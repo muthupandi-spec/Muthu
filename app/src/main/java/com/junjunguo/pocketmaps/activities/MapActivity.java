@@ -82,8 +82,6 @@ public class MapActivity extends Activity implements LocationListener {
           MapHandler.getMapHandler().loadMap(new File(Variable.getVariable().getMapsFolder().getAbsolutePath(),
                 Variable.getVariable().getCountry() + "-gh"), this);
           getIntent().putExtra("com.junjunguo.pocketmaps.activities.MapActivity.SELECTNEWMAP", false);
-
-            System.out.println("successs");
         }
         catch (Exception e)
         {
@@ -102,10 +100,10 @@ public class MapActivity extends Activity implements LocationListener {
         checkGpsAvailability();
         ensureLastLocationInit();
         updateCurrentLocation(null);
-        mapAlive = true;
+          mapAlive = true;
         NaviEngine.getNaviEngine().naviVoiceInit(this, false);
     }
-    
+
     public void ensureLocationListener(boolean showMsgEverytime)
     {
       if (locationListenerStatus == PermissionStatus.Disabled) { return; }
@@ -176,7 +174,6 @@ public class MapActivity extends Activity implements LocationListener {
                 getResources().getColor(R.color.my_primary_dark_transparent), this);
         mapActions = new MapActions(this, mapView);
 
-        System.out.println("print1");
     }
 
     /**
@@ -217,12 +214,131 @@ public class MapActivity extends Activity implements LocationListener {
                 System.out.println("print8");
             }
             MapHandler.getMapHandler().setCustomPoint(this, mcLatLong);
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(9.9179959,78.0404215));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.198458,	77.438853));    
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.199831,77.441223));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.200522,77.441846));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.201434,77.442335));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.202351,77.442732));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.205054,77.443984));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.208994,77.449346));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.212399,77.459418));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.211319,77.458547));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.2161,77.458775));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.216713,77.457964));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.218378,77.456589));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.221721,77.462114));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.220416,77.464719));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.220214,77.465761));
+
+
+
+
+
+
+
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.230843,	77.484136));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.232115,	77.485747));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.236154,	77.489422));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.237971,	77.491113));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.240206,	77.493229));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.241208,	77.494174));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.241208,	77.494174));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.241404,	77.494361));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.243112,	77.495298));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.249331,	77.49484 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.251613,	77.50067 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.251925,	77.501827));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.25884,	77.512225));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.260503,	77.514193));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.263377,	77.518944));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.268869,	77.522878));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.271911 , 77.524507));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.279374,	77.531164));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.281968,	77.533689));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.286336,	77.538211));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.291553,	77.541008));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.292934,	77.541626));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.301205,	77.554456));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.302669,	77.556133));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.306403,	77.560412));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.307011,	77.561109));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.310027,	77.564572));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.31356,	77.568629));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.322346,	77.577851));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.325522,	77.585148));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.328938,	77.589416));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.331898,	77.595072));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.332993,	77.597305));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.33452,	78.000353));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.342543,	78.013734));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.343813,	78.015717));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.346866,	78.020477));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.353113,	78.033251));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.354403,	78.036234));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.356715,	78.041549));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.359505,	78.047079));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.360555,	78.048784));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.362754,	78.052265));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.363319,	78.053154));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.367111,	78.05748 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.368692,	78.058668));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.373423,	78.061531));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.378588,	78.064622));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.379383,	78.065097));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.388238,	78.069901));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.390392,	78.0702  ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.397143,	78.070098));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.404199,	78.067008));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.407622,	78.065023));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.408886,	78.064127));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.410633,	78.062874));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.415117,	78.059669));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.421463,	78.056137));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.423399,	78.055845));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.428522,	78.055084));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.43561,	78.053915));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.439178,	78.053617));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.447933,	78.057616));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.451206,	78.058247));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.456668,	78.057856));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.473004,	78.056601));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.47532,	78.056423));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.48105,	78.056175));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.481966,	78.056346));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.488948,	78.059984));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.490816,	78.061044));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.497361,	78.06677 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.503888,	78.074465));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.507163,	78.075512));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.512403,	78.077209));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.51464,	78.08137 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.515346,	78.08283 ));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.517055,	78.084913));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.539169,	78.098677));
+
+
+
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.197228,77.436489));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(11.198458	,77.438853));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.359396,	78.344347));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.353869	,78.34535	));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.348966	,78.345812));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.34766	,78.346055	));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.346627	,78.34617));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.338655	,78.346555	));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.33021,	78.345642	));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.306575,	78.33918	));
+            MapHandler.getMapHandler().setCustomPoint1(this, new GeoPoint(12.304404	,78.338717));
+
+
+
             mapActions.showPositionBtn.setImageResource(R.drawable.ic_my_location_white_24dp);
         } else {
             mapActions.showPositionBtn.setImageResource(R.drawable.ic_location_searching_white_24dp);
         }
     }
-    
+
     public MapActions getMapActions() { return mapActions; }
 
     @Override public void onBackPressed() {
@@ -305,7 +421,7 @@ public class MapActivity extends Activity implements LocationListener {
       }
       try
       {
-        Location logps = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);        
+        Location logps = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
         if (logps != null) { mLastLocation = logps; return; }
           System.out.println("print4"+mLastLocation);
       }
@@ -337,7 +453,7 @@ public class MapActivity extends Activity implements LocationListener {
     @Override public void onProviderDisabled(String provider) {
         logUser("LocationService is turned off!!");
     }
-    
+
     /** Map was startet and until now not stopped! **/
     public static boolean isMapAlive() { return mapAlive; }
     public static void isMapAlive_preFinish() { mapAlive = false; }
@@ -350,7 +466,7 @@ public class MapActivity extends Activity implements LocationListener {
     private void log(String str) {
         Log.i(this.getClass().getName(), str);
     }
-    
+
     private void logUser(String str) {
       Log.i(this.getClass().getName(), str);
       try
@@ -360,3 +476,98 @@ public class MapActivity extends Activity implements LocationListener {
       catch (Exception e) { e.printStackTrace(); }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
